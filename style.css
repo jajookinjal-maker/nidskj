@@ -1,0 +1,31 @@
+body{
+  margin:0;
+  background:black;
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.word{
+  position:absolute;
+  color:#ffb6c1;
+  font-size:14px;
+  font-family:Arial,sans-serif;
+  text-shadow:
+    0 0 5px #ffb6c1,
+    0 0 10px #ffb6c1,
+    0 0 20px #ffb6c1;
+  white-space:nowrap;
+  animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%,100%{
+    transform:translateY(0);
+  }
+  50%{
+    transform:translateY(-8px);
+  }
+}
